@@ -2,6 +2,12 @@
 
 > Use Facebook SDK in Cordova projects
 
+This is a fork of the [Cordova-Plugin-Facebook-Connect](https://github.com/cordova-plugin-facebook-connect/cordova-plugin-facebook-connect) plugin, itself a fork of the jeduan cordova-plugin-facebook4. Cordova-Plugin-Facebook-connect, as well as cordova-plugin-facebook4, have conflicts with the standard ionic/phonegap barcode scanner plugin, and will not compile together on Android. This fork fixes that by excluding the zxing library (and assumes you also install the barcode scanner). 
+
+(see: https://github.com/phonegap/phonegap-plugin-barcodescanner/issues/606, https://github.com/phonegap/phonegap-plugin-barcodescanner/issues/535)
+
+Changes based on ideas from here: https://github.com/jeduan/cordova-plugin-facebook4/issues/777#issuecomment-517428763
+
 ## Table of contents
 
 - [Installation](#installation)
